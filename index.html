@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <header>
+        <h1>Jogo da Velha</h1>
+        <h2>Jogador da vez: <span id="sJogadorDaVez">X</span></h2>   
+        <h2>Vencedor: <span id="vencedorDPartida">?</span></h2>
+    </header>
+    <main>
+        <div class="tile_row">
+            <span id="1" class="tile" onclick="selecionarCasa(this.id)"></span>
+            <span id="2" class="tile" onclick="selecionarCasa(this.id)"></span>
+            <span id="3" class="tile" onclick="selecionarCasa(this.id)"></span>
+        </div>
+        <div class="tile_row">
+            <span id="4" class="tile" onclick="selecionarCasa(this.id)"></span>
+            <span id="5" class="tile" onclick="selecionarCasa(this.id)"></span>
+            <span id="6" class="tile" onclick="selecionarCasa(this.id)"></span>
+        </div>
+        <div class="tile_row">
+            <span id="7" class="tile" onclick="selecionarCasa(this.id)"></span>
+            <span id="8" class="tile" onclick="selecionarCasa(this.id)"></span>
+            <span id="9" class="tile" onclick="selecionarCasa(this.id)"></span>
+        </div>
+        <div>
+          <button onclick="reiniciar()">Reiniciar</button>
+        </div>
+      
+    </main>
+    <script src="script.js"></script>  
+</body>
+</html>
